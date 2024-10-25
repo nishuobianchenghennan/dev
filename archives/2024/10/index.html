@@ -25,6 +25,10 @@
   
 <script src="/js/jquery-1.11.1.min.js"></script>
 
+  <script>
+    var userDefinedSearchData = {"custom":true,"thisSearch":"https://www.baidu.com/s?wd=","thisSearchIcon":"url(https://www.baidu.com/favicon.ico)","hotStatus":true,"data":[{"name":"百度","img":"url(https://www.baidu.com/favicon.ico)","url":"https://www.baidu.com/s?wd="}]};
+    var expandAll = true;
+  </script>
   
 <script src="/js/header.js"></script>
 
@@ -89,7 +93,7 @@
     </header>
     <ul id="main-menu" class="main-menu">
       
-      <li>
+      <li class="expanded">
         
         <a class="fas fa-angle-down" style="cursor: pointer;">
           
@@ -97,7 +101,7 @@
             <span class="title">测试页面</span>
           </a>
           
-          <ul>
+          <ul style="display: block;">
             
             <li>
               <a href="#我站相关" class="smooth">
@@ -117,7 +121,7 @@
           
       </li>
       
-      <li>
+      <li class="expanded">
         
         <a class="fas fa-angle-down" style="cursor: pointer;">
           
@@ -125,7 +129,7 @@
             <span class="title">常用工具</span>
           </a>
           
-          <ul>
+          <ul style="display: block;">
             
             <li>
               <a href="#大学常用" class="smooth">
@@ -145,7 +149,7 @@
           
       </li>
       
-      <li>
+      <li class="expanded">
         
         <a class="fas fa-angle-down" style="cursor: pointer;">
           
@@ -153,7 +157,7 @@
             <span class="title">其他工具</span>
           </a>
           
-          <ul>
+          <ul style="display: block;">
             
             <li>
               <a href="#开发工具" class="smooth">
@@ -173,7 +177,7 @@
           
       </li>
       
-      <li>
+      <li class="">
         
           <a href="#前端" class="smooth">
             
@@ -183,7 +187,7 @@
           
       </li>
       
-      <li>
+      <li class="expanded">
         
         <a class="fas fa-angle-down" style="cursor: pointer;">
           
@@ -191,7 +195,7 @@
             <span class="title">工具</span>
           </a>
           
-          <ul>
+          <ul style="display: block;">
             
             <li>
               <a href="#视图文素材" class="smooth">
@@ -218,7 +222,7 @@
           
       </li>
       
-      <li>
+      <li class="">
         
           <a href="#音乐" class="smooth">
             
@@ -228,7 +232,7 @@
           
       </li>
       
-      <li>
+      <li class="">
         
           <a href="#友链" class="smooth">
             
@@ -273,18 +277,23 @@
           <i class="fas fa-bars"></i>
         </a>
       </li>
-      <!-- <li class="dropdown hover-line language-switcher">
+      <li class="dropdown hover-line language-switcher">
+        
         <a href="/index.html" class="dropdown-toggle" data-toggle="dropdown">
-          <img src="/images/flags/.png" alt="" /> 
+          <img src="/images/flags/flag-cn.png" alt="flag-cn" /> Chinese
         </a>
         <ul class="dropdown-menu languages">
-          <li class="active">
-            <a href="/index.html">
-              <img src="/images/flags/.png" alt="" alt="" /> 
-            </a>
-          </li>
+          
+            
+              <li class="active">
+                <a href="/index.html">
+                  <img src="/images/flags/flag-cn.png" alt="flag-cn" alt="flag-cn" /> Chinese
+                </a>
+              </li>
+            
+          
         </ul>
-      </li> -->
+      </li>
       <li class="switch-mode hover-line" onclick="switchNightMode()">
         <a href="#">
           <svg t="1593061068148" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1681" width="16" height="16">
@@ -301,7 +310,7 @@
     <section class="sousuo">
       <div class="search">
         <div class="search-box">
-          <span class="search-icon" style="background: url(https://cdn.jsdelivr.net/npm/hassan-assets/navi/search_icon.png) 0px 0px; opacity: 1;"></span>
+          <span class="search-icon" style="background: url(/images/search_icon.png) 0px 0px; opacity: 1;"></span>
           <input type="text" id="txt" class="search-input" autocomplete="off" placeholder="请输入关键字，按回车 / Enter 搜索">
           <button class="search-btn" id="search-btn"><i class="fa fa-search"></i></button>
         </div>
@@ -313,13 +322,13 @@
         <div class="search-engine" style="display: none;">
           <div class="search-engine-head">
             <strong class="search-engine-tit">选择您的默认搜索引擎：</strong>
-            <div class="search-engine-tool">搜索热词： <span id="hot-btn"></span></div>
+            <div class="search-engine-tool">搜索热词： <span id="hot-btn" style="background-image: url(/images/off_on.png);"></span></div>
           </div>
           <ul class="search-engine-list search-engine-list_zmki_ul">
           </ul>
         </div>
     </section>
-    <script>search()</script>
+    <script>search('/images/search_icon.png')</script>
   
   
     
@@ -332,7 +341,7 @@
     <p>
       
       &copy; 2024
-      | Designed by <a href="http://viggoz.com" target="_blank"><strong>Viggo</strong></a> | Beautified By <a target="_blank" rel="noopener" href="https://harriswong.top"><strong>Harris Wong</strong></a> | Powered by <a href="https://hexo.io/" target="_blank"><strong>Hexo</strong></a> & <a href="https://github.com/HCLonely/hexo-theme-webstack/" target="_blank"><strong>hexo-theme-webstack</strong></a>
+      <a href="javascript:void(0);"><strong>Harris Wong</strong></a> | Design by <a href="http://viggoz.com" target="_blank"><strong>Viggo</strong></a> | Power by <a href="https://hexo.io/" target="_blank"><strong>Hexo</strong></a> & <a href="https://github.com/HCLonely/hexo-theme-webstack/" target="_blank"><strong>hexo-theme-webstack</strong></a>
     </p>
     
     <div class="go-up">
@@ -357,7 +366,9 @@
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-<textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arimo, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 18.5714px; width: 53px;" class="autosizejs" id="autosizejs"></textarea>
+
+<script src="/js/lozad.min.js"></script>
+
 
 
   
