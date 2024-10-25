@@ -135,6 +135,6 @@ theme: oranges
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:nishuobianchenghennan/nishuobianchenghennan.github.io/blog.git
+  repo: git@github.com:nishuobianchenghennan/nishuobianchenghennan.github.io.git
   branch: main
 
