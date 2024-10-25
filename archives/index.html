@@ -13,7 +13,6 @@
   <link rel="shortcut icon" href="/favicon.ico">
   
 <link rel="stylesheet" href="/css/hclonely.css">
-<link rel="stylesheet" href="//fonts.loli.net/css?family=Arimo:400,700,400italic.css">
 <link rel="stylesheet" href="/css/fonts/linecons/css/linecons.min.css">
 <link rel="stylesheet" href="/css/fonts/fontawesome/css/all.min.css">
 <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -21,12 +20,13 @@
 <link rel="stylesheet" href="/css/xenon-components.min.css">
 <link rel="stylesheet" href="/css/xenon-skins.min.css">
 <link rel="stylesheet" href="/css/nav.min.css">
+<link rel="stylesheet" href="//fonts.loli.net/css?family=Arimo:400,700,400italic.css">
 
   
 <script src="/js/jquery-1.11.1.min.js"></script>
 
   <script>
-    var userDefinedSearchData = {"custom":true,"thisSearch":"https://www.baidu.com/s?wd=","thisSearchIcon":"url(https://www.baidu.com/favicon.ico)","hotStatus":true,"data":[{"name":"百度","img":"url(https://www.baidu.com/favicon.ico)","url":"https://www.baidu.com/s?wd="}]};
+    var userDefinedSearchData = {"custom":true,"thisSearch":"https://www.baidu.com/s?wd=","thisSearchIcon":"url(https://www.baidu.com/favicon.ico)","hotStatus":true,"data":[{"name":"百度","img":"url(https://www.baidu.com/favicon.ico)","url":"https://www.baidu.com/s?wd="},{"name":"谷歌","img":"url(https://www.google.com/favicon.ico)","url":"https://www.google.com/search?q="},{"name":"Bing","img":"url(https://cn.bing.com/favicon.ico)","url":"https://cn.bing.com/search?q="},{"name":"GitHub","img":"url(https://github.com/favicon.ico)","url":"https://github.com/search?q="},{"name":"Gitee","img":"url(https://gitee.com/favicon.ico)","url":"https://so.gitee.com/?q="},{"name":"知乎","img":"url(https://www.zhihu.com/favicon.ico)","url":"https://www.zhihu.com/search?q="},{"name":"维基百科","img":"url(https://zh.wikipedia.org/favicon.ico)","url":"https://zh.wikipedia.org/w/index.php?search="},{"name":"YouTube","img":"url(https://www.youtube.com/favicon.ico)","url":"https://www.youtube.com/results?search_query="},{"name":"Bilibili","img":"url(https://www.bilibili.com/favicon.ico)","url":"https://search.bilibili.com/all?keyword="},{"name":"谷歌学术","img":"url(https://scholar.google.com/favicon.ico)","url":"https://scholar.google.com/scholar?hl=zh-CN&as_sdt=0%2C33&q="},{"name":"中国知网","img":"url(https://cnki.net/favicon.ico)","url":"https://scholar.cnki.net/home/search?sw=1&sw-input="},{"name":"术语在线","img":"url(https://www.termonline.cn/favicon.ico)","url":"https://www.termonline.cn/search?searchText="},{"name":"52pojie","img":"url(https://www.52pojie.cn/favicon.ico)","url":"https://www.bing.com/search?q=site%3A52pojie.cn%20"},{"name":"比价","img":"url(https://b1bj.com/favicon.ico)","url":"https://b1bj.com/s.aspx?key="}]};
     var expandAll = true;
   </script>
   
@@ -93,23 +93,59 @@
     </header>
     <ul id="main-menu" class="main-menu">
       
-      <li class="">
+      <li class="expanded">
         
-          <a href="#测试页面" class="smooth">
-            
+        <a class="fas fa-angle-down" style="cursor: pointer;">
+          
             <i class="far fa-star"></i>
             <span class="title">测试页面</span>
           </a>
           
+          <ul style="display: block;">
+            
+            <li>
+              <a href="#我站相关" class="smooth">
+                <i class="iconfont icon-blog"></i>
+                <span class="title">我站相关</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#社交平台" class="smooth">
+                <i class="iconfont icon-social"></i>
+                <span class="title">社交平台</span>
+              </a>
+            </li>
+            
+          </ul>
+          
       </li>
       
-      <li class="">
+      <li class="expanded">
         
-          <a href="#常用工具" class="smooth">
-            
+        <a class="fas fa-angle-down" style="cursor: pointer;">
+          
             <i class="far fa-star"></i>
             <span class="title">常用工具</span>
           </a>
+          
+          <ul style="display: block;">
+            
+            <li>
+              <a href="#大学常用" class="smooth">
+                <i class="iconfont icon-book"></i>
+                <span class="title">大学常用</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#英语雅思" class="smooth">
+                <i class="iconfont icon-english"></i>
+                <span class="title">英语雅思</span>
+              </a>
+            </li>
+            
+          </ul>
           
       </li>
       
@@ -138,6 +174,71 @@
             </li>
             
           </ul>
+          
+      </li>
+      
+      <li class="">
+        
+          <a href="#前端" class="smooth">
+            
+            <i class="iconfont icon-cherry"></i>
+            <span class="title">前端</span>
+          </a>
+          
+      </li>
+      
+      <li class="expanded">
+        
+        <a class="fas fa-angle-down" style="cursor: pointer;">
+          
+            <i class="fas fa-tools"></i>
+            <span class="title">工具</span>
+          </a>
+          
+          <ul style="display: block;">
+            
+            <li>
+              <a href="#视图文素材" class="smooth">
+                <i class="iconfont icon-video"></i>
+                <span class="title">视图文素材</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#图片设计" class="smooth">
+                <i class="iconfont icon-photo"></i>
+                <span class="title">图片设计</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#其它" class="smooth">
+                <i class="iconfont icon-about"></i>
+                <span class="title">其它</span>
+              </a>
+            </li>
+            
+          </ul>
+          
+      </li>
+      
+      <li class="">
+        
+          <a href="#音乐" class="smooth">
+            
+            <i class="iconfont icon-music"></i>
+            <span class="title">音乐</span>
+          </a>
+          
+      </li>
+      
+      <li class="">
+        
+          <a href="#友链" class="smooth">
+            
+            <i class="iconfont icon-blogroll"></i>
+            <span class="title">友链</span>
+          </a>
           
       </li>
       
