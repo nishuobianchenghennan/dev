@@ -136,5 +136,5 @@ theme: oranges
 deploy:
   type: git
   repo: git@github.com:nishuobianchenghennan/nishuobianchenghennan.github.io.git
-  branch: main
+  branch: master
 
